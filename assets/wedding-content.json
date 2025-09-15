@@ -1,0 +1,76 @@
+{
+  "schedule": {
+    "wednesday": {
+      "date": "Wednesday, April 29th, 2026",
+      "items": [
+        "Meet us for drinks @ 8:30pm",
+        "Location TBD"
+      ]
+    },
+    "friday": {
+      "date": "Friday, May 1st, 2026",
+      "location": "Rose Terrace, Resorts World Las Vegas",
+      "segments": [
+        "Ceremony",
+        "Cocktail Hour",
+        "Reception",
+        "After Party"
+      ]
+    }
+  },
+  "travel": {
+    "airport": {
+      "name": "Harry Reid International Airport (LAS)",
+      "note": "Approximately 15 min from the hotel. You can Uber/Lyft, get a cab, or use a car service."
+    },
+    "hotel": {
+      "name": "Resorts World Las Vegas",
+      "address": "3000 S Las Vegas Blvd, Las Vegas, NV 89109",
+      "roomBlock": {
+        "link": "https://book.passkey.com/go/TaylorandJoshWedding",
+        "instruction": "Please use the link below to reserve a room in the wedding room block:",
+        "deadline": "Monday March 30th 2026",
+        "deadlineNote": "You must book your hotel by the deadline to utilize the room block rates. Rooms booked after this date will be at regular market pricing."
+      }
+    }
+  },
+  "registry": {
+    "intro": "Your presence is the present, but if you insist on giving us something additional, here is a link to some items we would like to own.",
+    "note": "There is also a cash honeymoon fund option there as well if you prefer to donate to our epic honeymoon abroad!",
+    "link": "https://www.zola.com/registry/dethomastaylorwedding"
+  },
+  "faq": [
+    {
+      "q": "Can I bring my kids?",
+      "a": "We love the littles, but this party is 21+."
+    },
+    {
+      "q": "What is the dress code?",
+      "a": "Wear whatever you feel sexy in. The one request is that all guests wear ALL BLACK."
+    },
+    {
+      "q": "Do I have to stay at Resorts World?",
+      "a": "No! We have a room block there, but you are more than welcome to stay at your favorite Vegas hotel and commute to the ceremony. Uber and Lyft are pretty cheap and easy to do along the strip!"
+    },
+    {
+      "q": "Can we take photos/video during the ceremony?",
+      "a": "We have hired THE BEST team of photographers and videographers to help us capture our day, so we would appreciate it if you refrain from using cell phones during the ceremony so that we don’t interfere with the professional’s work!"
+    },
+    {
+      "q": "Will there be food to accommodate my dietary restrictions?",
+      "a": "Yes! We are planning to have meat/fish, vegetarian and vegan options but please let Taylor know if you need something else."
+    },
+    {
+      "q": "Will there be alcohol?",
+      "a": "Duh it’s Vegas baby!"
+    },
+    {
+      "q": "Will there be mocktails?",
+      "a": "YES! Tay loves a California sober moment, so there will for sure be at least 1 mocktail option."
+    },
+    {
+      "q": "Are there any obligations besides the ceremony/reception?",
+      "a": "No! We will be doing a very informal welcome reception, location TBD, on Wednesday 4/29, but nothing planned for Saturday or Sunday so you can stay and enjoy the weekend with us, or you can get back to real life if necessary."
+    }
+  ]
+}
