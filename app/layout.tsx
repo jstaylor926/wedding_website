@@ -28,7 +28,12 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/grg0gqt.css" />
       </head>
-      <body className={`font-gizmo ${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`font-gizmo ${geistSans.variable} ${geistMono.variable} min-h-dvh w-screen`}>
+        {/* Global fixed background */}
+        <div
+          aria-hidden
+          className="fixed inset-0 -z-10 bg-[url('/bg.png')] bg-cover bg-center bg-no-repeat"
+        />
         <Navbar />
         {children}
       </body>

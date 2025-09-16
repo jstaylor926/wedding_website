@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={`antialiased min-h-screen w-screen bg-[url('/bg.png')] bg-cover bg-center`}>
+    <div className={`antialiased min-h-dvh w-screen`}>
       <main className="w-screen h-screen md:p-4 grid grid-cols-1 md:grid-cols-2">
         {/* Left: Navigation Buttons */}
         <div className="hidden md:flex items-center justify-center py-6 md:py-8 px-2 md:px-2">
@@ -10,7 +10,9 @@ export default function Home() {
             <div className={`w-full max-w-xs md:max-w-sm mx-auto flex flex-col gap-4`}>
               <Link
                 href="/schedule"
-                className="w-full md:w-4/5 md:self-start text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out hover:scale-105 md:hover:scale-110 hover:text-[var(--brand-red)]"
+                aria-disabled
+                tabIndex={-1}
+                className="pointer-events-none cursor-not-allowed w-full md:w-4/5 md:self-start text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out opacity-60"
               >
                 Schedule
               </Link>
@@ -22,13 +24,17 @@ export default function Home() {
               </Link>
               <Link
                 href="/registry"
-                className="w-full md:w-4/5 md:self-start text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out hover:scale-105 md:hover:scale-110 hover:text-[var(--brand-red)]"
+                aria-disabled
+                tabIndex={-1}
+                className="pointer-events-none cursor-not-allowed w-full md:w-4/5 md:self-start text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out opacity-60"
               >
                 Registry
               </Link>
               <Link
                 href="/faq"
-                className="w-full md:w-4/5 md:self-end text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out hover:scale-105 md:hover:scale-110 hover:text-[var(--brand-red)]"
+                aria-disabled
+                tabIndex={-1}
+                className="pointer-events-none cursor-not-allowed w-full md:w-4/5 md:self-end text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out opacity-60"
               >
                 FAQ
               </Link>
