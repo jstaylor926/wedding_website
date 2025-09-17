@@ -4,17 +4,17 @@ export default function Travel() {
   const { airport, hotel } = content.travel;
 
   return (
-    <main className="mx-auto max-w-2xl px-6 py-10 text-gray-100">
-      <h1 className="text-3xl font-bold tracking-tight text-[var(--brand-red)]">Travel</h1>
+    <main className="mx-auto max-w-2xl px-6 py-10 text-gray-100 text-center">
+      <h1 className="text-3xl font-bold tracking-tight text-[var(--brand-red)]">Travel Information</h1>
 
       <section className="mt-6">
-        <h2 className="text-xl font-semibold text-gray-100">Airport</h2>
+        <h2 className="text-2xl font-semibold text-gray-100">Airport</h2>
         <p className="mt-1 text-gray-200">{airport.name}</p>
         <p className="mt-1 text-gray-300">{airport.note}</p>
       </section>
 
       <section className="mt-8">
-        <h2 className="text-xl font-semibold text-gray-100">Hotel</h2>
+        <h2 className="text-2xl font-semibold text-gray-100">Hotel</h2>
         <p className="mt-1 text-gray-200">{hotel.name}</p>
         <p className="text-gray-300">{hotel.address}</p>
 
