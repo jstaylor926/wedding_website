@@ -35,6 +35,13 @@ export default function Travel() {
           <p className="text-gray-300">{hotel.roomBlock.deadlineNote}</p>
         </div>
       </section>
+      <div className="mt-10 flex justify-center">
+        <img
+          src="/dancinc-hearts - Edited - RED.png"
+          alt="Decorative travel graphic"
+          className="h-auto w-28"
+        />
+      </div>
     </main>
   );
 }
