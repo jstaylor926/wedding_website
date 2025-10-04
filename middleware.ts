@@ -4,8 +4,11 @@ import type { NextRequest } from "next/server";
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
-  // Allow Home and Travel pages
-  const allowed = pathname === "/" || pathname.startsWith("/travel");
+  // Allow public app routes
+  const allowedRoutes = ["/", "/travel", "/schedule", "/registry", "/faq"];
+  const allowed = allowedRoutes.some((route) =>
+    route === "/" ? pathname === route : pathname.startsWith(route),
+  );
 
   // Always allow Next internals and static assets
   const isInternal = pathname.startsWith("/_next") || pathname === "/favicon.ico";
@@ -24,4 +27,3 @@ export function middleware(req: NextRequest) {
 export const config = {
   matcher: "/:path*",
 };
-

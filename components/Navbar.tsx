@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/schedule", label: "Schedule" },
+  { href: "/schedule", label: "Schedule", disabled: true },
   { href: "/travel", label: "Travel" },
-  { href: "/registry", label: "Registry" },
+  { href: "/registry", label: "Registry", disabled: true },
   { href: "/faq", label: "FAQ" },
 ];
 
@@ -41,22 +41,26 @@ export default function Navbar() {
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
           {navLinks.map((l) => {
-            const enabled = l.href === "/" || l.href === "/travel";
-            return enabled ? (
+            const isActive = pathname === l.href;
+            if (l.disabled) {
+              return (
+                <span
+                  key={l.href}
+                  className="text-2xl text-black/40 cursor-not-allowed"
+                  aria-disabled
+                >
+                  {l.label}
+                </span>
+              );
+            }
+
+            return (
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-2xl text-black hover:text-[var(--brand-red)] transition-colors"
-              >
-                {l.label}
-              </Link>
-            ) : (
-              <Link
-                key={l.href}
-                href={l.href}
-                aria-disabled
-                tabIndex={-1}
-                className="text-2xl text-black transition-colors pointer-events-none cursor-not-allowed opacity-60"
+                className={`text-2xl transition-colors ${
+                  isActive ? "text-[var(--brand-red)]" : "text-black hover:text-[var(--brand-red)]"
+                }`}
               >
                 {l.label}
               </Link>
@@ -86,24 +90,20 @@ export default function Navbar() {
           <div className="rounded-lg bg-white/90 backdrop-blur-sm border border-black/10 shadow-lg">
             <ul className="p-2 divide-y divide-black/10">
               {navLinks.map((l) => {
-                const enabled = l.href === "/" || l.href === "/travel";
+                const isActive = pathname === l.href;
                 return (
                   <li key={l.href}>
-                    {enabled ? (
-                      <Link
-                        href={l.href}
-                        className="block px-4 py-3 text-xl text-black hover:text-[var(--brand-red)]"
-                        onClick={() => setOpen(false)}
-                      >
+                    {l.disabled ? (
+                      <span className="block px-4 py-3 text-xl text-black/40" aria-disabled>
                         {l.label}
-                      </Link>
+                      </span>
                     ) : (
                       <Link
                         href={l.href}
-                        aria-disabled
-                        tabIndex={-1}
-                        className="block px-4 py-3 text-xl text-black pointer-events-none cursor-not-allowed opacity-60"
-                        onClick={(e) => e.preventDefault()}
+                        className={`block px-4 py-3 text-xl transition-colors ${
+                          isActive ? "text-[var(--brand-red)]" : "text-black hover:text-[var(--brand-red)]"
+                        }`}
+                        onClick={() => setOpen(false)}
                       >
                         {l.label}
                       </Link>

@@ -41,8 +41,16 @@
   },
   "faq": [
     {
+      "q": "When is the RSVP Deadline?",
+      "a": "March 1, 2026"
+    },
+    {
+      "q": "Will the wedding be indoors or outdoors?",
+      "a": "Outdoors but if weather does not cooperate we do have an indoor ballroom to pivot to."
+    },
+    {
       "q": "Can I bring my kids?",
-      "a": "We love the littles, but this party is 21+."
+      "a": "We love the littles, but this party is 21+"
     },
     {
       "q": "What is the dress code?",
@@ -58,7 +66,7 @@
     },
     {
       "q": "Will there be food to accommodate my dietary restrictions?",
-      "a": "Yes! We are planning to have meat/fish, vegetarian and vegan options but please let Taylor know if you need something else."
+      "a": "Yes! We are planning to have meat/fish, vegetarian and vegan options but please fill out any other dietary restrictions you may have on your RSVP."
     },
     {
       "q": "Will there be alcohol?",
@@ -70,7 +78,11 @@
     },
     {
       "q": "Are there any obligations besides the ceremony/reception?",
-      "a": "No! We will be doing a very informal welcome reception, location TBD, on Wednesday 4/29, but nothing planned for Saturday or Sunday so you can stay and enjoy the weekend with us, or you can get back to real life if necessary."
+      "a": "No! We will be doing an informal welcome drink moment, location TBD, on Wednesday 4/29, but nothing planned for Saturday or Sunday so you can stay and enjoy the weekend with us, or you can get back to real life if necessary."
+    },
+    {
+      "q": "Can I bring a plus one?",
+      "a": "We are only able to accommodate the guests listed on your invitation. If you received a plus one, it would appear on your invite, and will be listed when you RSVP. We ask that you please do not ask to bring any additional guests if they have not been initially invited."
     }
   ]
 }

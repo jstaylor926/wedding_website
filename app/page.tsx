@@ -8,33 +8,21 @@ export default function Home() {
         <div className="hidden md:flex items-center justify-center py-6 md:py-8 px-2 md:px-2">
           <div className="w-full md:max-w-md p-4 md:p-6">
             <div className={`w-full max-w-xs md:max-w-sm mx-auto flex flex-col gap-4`}>
-              <Link
-                href="/schedule"
-                aria-disabled
-                tabIndex={-1}
-                className="pointer-events-none cursor-not-allowed w-full md:w-4/5 md:self-start text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out opacity-60"
-              >
+              <span className="w-full md:w-4/5 md:self-start text-center rounded-lg bg-transparent text-black/40 py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl">
                 Schedule
-              </Link>
+              </span>
               <Link
                 href="/travel"
                 className="w-full md:w-4/5 md:self-end text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out hover:scale-105 md:hover:scale-110 hover:text-[var(--brand-red)]"
               >
                 Travel
               </Link>
-              <Link
-                href="/registry"
-                aria-disabled
-                tabIndex={-1}
-                className="pointer-events-none cursor-not-allowed w-full md:w-4/5 md:self-start text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out opacity-60"
-              >
+              <span className="w-full md:w-4/5 md:self-start text-center rounded-lg bg-transparent text-black/40 py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl">
                 Registry
-              </Link>
+              </span>
               <Link
                 href="/faq"
-                aria-disabled
-                tabIndex={-1}
-                className="pointer-events-none cursor-not-allowed w-full md:w-4/5 md:self-end text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out opacity-60"
+                className="w-full md:w-4/5 md:self-end text-center rounded-lg bg-transparent text-black py-2 md:py-3 font-bold tracking-wide leading-tight text-2xl md:text-4xl transition-transform duration-200 ease-out hover:scale-105 md:hover:scale-110 hover:text-[var(--brand-red)]"
               >
                 FAQ
               </Link>
