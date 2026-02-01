@@ -11,10 +11,9 @@
       "date": "Friday, May 1st, 2026",
       "location": "Rose Terrace, Resorts World Las Vegas",
       "segments": [
-        "Ceremony",
-        "Cocktail Hour",
-        "Reception",
-        "After Party"
+        "6:00pm – Ceremony",
+        "6:30–7:30pm – Cocktail Hour",
+        "7:30–11:30pm – Reception"
       ]
     }
   },
@@ -35,9 +34,9 @@
     }
   },
   "registry": {
-    "intro": "Your presence is the present, but if you insist on giving us something additional, here is a link to some items we would like to own.",
-    "note": "There is also a cash honeymoon fund option there as well if you prefer to donate to our epic honeymoon abroad!",
-    "link": "https://www.zola.com/registry/dethomastaylorwedding"
+    "intro": "Your presence is the present but if you insist on giving us something more, here is a link to donate to our honeymoon fund. Xo",
+    "note": "",
+    "link": "https://www.zola.com/registry/joshandtaylorseptember26"
   },
   "faq": [
     {
@@ -54,7 +53,7 @@
     },
     {
       "q": "What is the dress code?",
-      "a": "Wear whatever you feel sexy in. The one request is that all guests wear ALL BLACK."
+      "a": "Wear whatever you feel sexy in. We ask our guests to wear BLACK. Feel free to accessorize with our decor colors if you like. Here is our dress code inspiration if you need ideas!"
     },
     {
       "q": "Do I have to stay at Resorts World?",

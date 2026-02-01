@@ -1,6 +1,7 @@
 import content from "@/assets/wedding-content.json";
 import Image from "next/image";
 import { Fragment } from "react";
+import DressCodeModal from "@/components/DressCodeModal";
 
 export default function Faq() {
   return (
@@ -33,7 +34,14 @@ export default function Faq() {
             )}
             <section>
               <h2 className="text-2xl font-semibold text-gray-200">{item.q}</h2>
-              <p className="mt-2 text-slate-400">{item.a}</p>
+              {item.q === "What is the dress code?" ? (
+                <div className="mt-2 text-slate-400 inline-flex items-center justify-center flex-wrap">
+                  <span>{item.a}</span>
+                  <DressCodeModal />
+                </div>
+              ) : (
+                <p className="mt-2 text-slate-400">{item.a}</p>
+              )}
             </section>
             {item.q === "Can I bring my kids?" && (
               <div className="flex justify-center py-4">
